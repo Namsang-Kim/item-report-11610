@@ -33,7 +33,7 @@
     }
     .tabcontent img {
       max-width: 95%;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }
     .tabcontent h2 {
       margin-top: 0;
@@ -59,7 +59,7 @@
 
   <div id="report" class="tabcontent">
     <h2>CTR / CVR 상승 상품 리포트</h2>
-    <p>2025-04-21 19:50:03 기준 최근 7일 대비 그 이전 7일동안 CTR/CVR이 상승한 상위 10개 상품입니다.</p>
+    <p>2025-04-22 09:37:03 기준 최근 7일 대비 그 이전 7일동안 CTR/CVR이 상승한 상위 10개 상품입니다.</p>
     <div style="margin-bottom: 16px; font-size: 14px; line-height: 1.5;">
       <strong>📌 지표 설명</strong><br>
       - <strong>최근 7일 평균 판매량</strong>: 최근 7일간 평균 판매수<br>
@@ -74,12 +74,13 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/src/sha256.min.js"></script>
 <script>
-  const PASSWORD = "dr_11610";
+  const HASHED_PASSWORD = "none";
 
   function checkPassword() {
     const input = document.getElementById("pw").value.trim();
-    if (input === PASSWORD) {
+    if (input === "dr_11610") {
       document.getElementById("auth-box").style.display = "none";
       document.getElementById("main-content").style.display = "block";
       document.getElementById("defaultOpen")?.click();
