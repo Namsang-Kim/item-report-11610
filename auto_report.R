@@ -1,5 +1,3 @@
-.libPaths("/home/namsangkim/item-report/renv/library/R-4.0/x86_64-pc-linux-gnu")
-
 # 1. 라이브러리 로드 및 테마 설정
 library(bit); library(bit64); library(datarizer); library(DBI); library(RMySQL)
 library(ggplot2); library(dplyr); library(lubridate); library(data.table)
@@ -17,6 +15,7 @@ SITE_ID     <- "11610"
 today_label <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
 BASE_DIR <- glue("/home/namsangkim/item-reports/item-report-{SITE_ID}")
 setwd(BASE_DIR)
+
 
 # 3. 데이터 로드
 site_mst <- get_query(
@@ -102,7 +101,14 @@ summary_compare <- inner_join(recent_sum, prev_sum, by = c("item_id", "item_name
   mutate(rank_diff = rank_prev - rank_recent) %>%
   arrange(rank_recent, desc(CTR_recent), desc(CVR_recent))
 
-# 9. 테이블 저장 함수
+# 🎯 여백 최소화 테마 정의
+theme_table <- ttheme_default(
+  core    = list(fg_params = list(cex = 0.8)),
+  colhead = list(fg_params = list(cex = 0.9, fontface = "bold")),
+  padding = unit(c(1, 1), "mm")  # ← 여백 최소화
+)
+
+# 📄 이미지 저장 함수
 save_table <- function(df, filename, top_n = 10) {
   tbl <- df %>%
     slice_head(n = top_n) %>%
@@ -117,7 +123,14 @@ save_table <- function(df, filename, top_n = 10) {
     select(번호, `상품명 (ID)`, `평균 판매량`, CTR, CVR, `판매 순위`)
   
   tbl_grob <- tableGrob(tbl, rows = NULL, theme = theme_table)
-  ggsave(filename, plot = tbl_grob, width = 14, height = ifelse(top_n <= 10, 6, 8), dpi = 300)
+  
+  ggsave(
+    filename = filename,
+    plot = tbl_grob,
+    width = 14,
+    height = ifelse(top_n <= 10, 6, 8),
+    dpi = 300
+  )
 }
 
 save_table(summary_compare, "summary_7day_compare_table.png", top_n = 30)
@@ -167,19 +180,18 @@ Sys.sleep(1)
 js_code <- '
 <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/src/sha256.min.js"></script>
 <script>
-  const HASHED_PASSWORD = "387260fb5aaae59811021adc2f146b6d2b4655538921337fda580ecd5fecaebb";
+  const PLAIN_PASSWORD = "dr_11610";
 
-  function checkPassword() {
-    const input = document.getElementById("pw").value.trim();
-    const hashedInput = sha256(input);
-    if (hashedInput === HASHED_PASSWORD) {
-      document.getElementById("auth-box").style.display = "none";
-      document.getElementById("main-content").style.display = "block";
-      document.getElementById("defaultOpen")?.click();
-    } else {
-      alert("비밀번호가 틀렸습니다.");
-    }
+function checkPassword() {
+  const input = document.getElementById("pw").value.trim();
+  if (input === PLAIN_PASSWORD) {
+    document.getElementById("auth-box").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+    document.getElementById("defaultOpen")?.click();
+  } else {
+    alert("비밀번호가 틀렸습니다.");
   }
+}
 
   function openTab(evt, tabName) {
     const tabcontent = document.getElementsByClassName("tabcontent");
@@ -191,8 +203,7 @@ js_code <- '
   }
 </script>
 '
-
-# ✅ HTML 본문 + js_code 삽입
+##
 html_code <- glue("
 <!DOCTYPE html>
 <html lang=\"ko\">
@@ -229,7 +240,7 @@ html_code <- glue("
     }}
     .tabcontent img {{
       max-width: 95%;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
     }}
     .tabcontent h2 {{
       margin-top: 0;
@@ -251,62 +262,32 @@ html_code <- glue("
 <div id=\"main-content\" style=\"display: none;\">
   <div class=\"tab\">
     <button class=\"tablinks\" onclick='openTab(event, \"report\")' id=\"defaultOpen\">CTR / CVR 상승 상품</button>
-    <button class=\"tablinks\" onclick='openTab(event, \"orders\")'>구매 회차별 주문 데이터</button>
   </div>
 
   <div id=\"report\" class=\"tabcontent\">
     <h2>CTR / CVR 상승 상품 리포트</h2>
     <p>{today_label} 기준 최근 7일 대비 그 이전 7일동안 CTR/CVR이 상승한 상위 10개 상품입니다.</p>
     <div style=\"margin-bottom: 16px; font-size: 14px; line-height: 1.5;\">
-  <strong>📌 지표 설명</strong><br>
-  - <strong>최근 7일 평균 판매량</strong>: 최근 7일간 평균 판매수<br>
-  - <strong>이전 7일 평균 판매량</strong>: 이전 7일간 평균 판매수<br>
-  - <strong>CTR 상승률 (%)</strong>: 이전 7일 대비 CTR(클릭수/노출수) 상승률 (%)<br>
-  - <strong>CVR 상승률 (%)</strong>: 이전 7일 대비 CVR(판매수/노출수) 상승률 (%)<br>
-  - <strong>판매 순위</strong>: 최근 7일 판매량 기준 순위 (이전 7일 순위)
-</div>
+      <strong>📌 지표 설명</strong><br>
+      - <strong>최근 7일 평균 판매량</strong>: 최근 7일간 평균 판매수<br>
+      - <strong>이전 7일 평균 판매량</strong>: 이전 7일간 평균 판매수<br>
+      - <strong>CTR 상승률 (%)</strong>: 이전 7일 대비 CTR(클릭수/노출수) 상승률 (%)<br>
+      - <strong>CVR 상승률 (%)</strong>: 이전 7일 대비 CVR(판매수/노출수) 상승률 (%)<br>
+      - <strong>판매 순위</strong>: 최근 7일 판매량 기준 순위 (이전 7일 순위)
+    </div>
     <img src=\"summary_7day_compare_table.png\" alt=\"Top30 상품 표\">
     <img src=\"summary_rank_change_top10_table.png\" alt=\"Top10 상품 표\">
     <img src=\"rank_change_top10_trend.png\" alt=\"Top10 상품 추이 그래프\">
-  </div>
-
-  <div id=\"orders\" class=\"tabcontent\">
-    <h2>구매 회차별 주문 데이터</h2>
-    <p style=\"font-size: 14px; margin-bottom: 12px;\">*최근 1년간 기준 / 매주 월요일 집계 / 현재 가입된 회원 기준</p>
-
-    <div style=\"border: 1px solid #d35400; padding: 12px 16px; max-width: 700px; font-size: 14px; background-color: #fffaf2;\">
-      <strong>▶ 요청 내용:</strong><br><br>
-      - 최근 1년간 구매 회차별 주문 데이터<br>
-      - 주간 단위로 집계하여 시계열 트래킹 가능한 형태로 제공 요청<br><br>
-
-      - 데이터 집계 기준<br>
-      ㄴ 집계 주기: 매주 월요일, 전주(월~일) 데이터 기준으로 적재<br>
-      ㄴ 범위: 각 집계일로부터 최근 1년간 데이터<br>
-      ㄴ 특이사항: 현재 가입되어있는 회원을 기준으로 계산<br><br>
-
-      ㄴ 예시:<br>
-      3/18(월)에 적재하는 데이터는 3/10~3/16(일) 기간의 주문을 포함<br>
-      3/16(일) 시점에서 최근 1년간의 구매 회차별 모수 제공
-    </div>
-
-    <div style=\"margin-top: 12px; text-align: left;\">
-      <img src=\"order_by_round.png\" alt=\"구매 회차별 주문 데이터\" style=\"max-width: 95%; display: block; margin-left: 0;\">
-    </div>
-    <div style=\"margin-top: 32px; text-align: left;\">
-  <h3 style=\"margin-bottom: 8px;\">구매 회차별 주문 비중 추이</h3>
-  <img src=\"order_by_round_chart.png\" alt=\"구매 회차별 주문 비중 시계열 차트\" style=\"max-width: 95%; display: block; margin-left: 0;\">
-</div>
   </div>
 </div>
 
 <script src=\"https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/src/sha256.min.js\"></script>
 <script>
-  const HASHED_PASSWORD = \"cee18041bc7cedfba5bbec78211fd54389625fbfc3cbb903d884a9b212b7961d\";
+  const HASHED_PASSWORD = \"none\";
 
   function checkPassword() {{
     const input = document.getElementById(\"pw\").value.trim();
-    const hashedInput = sha256(input);
-    if (hashedInput === HASHED_PASSWORD) {{
+    if (input === \"dr_11610\") {{
       document.getElementById(\"auth-box\").style.display = \"none\";
       document.getElementById(\"main-content\").style.display = \"block\";
       document.getElementById(\"defaultOpen\")?.click();
@@ -331,11 +312,23 @@ html_code <- glue("
 
 writeLines(html_code, "index.html")
 
+##
+files_to_add <- c(
+  "index.html",
+  "summary_7day_compare_table.png",
+  "summary_rank_change_top10_table.png",
+  "rank_change_top10_trend.png"
+)
+
+# 존재하는 파일만 add
+existing_files <- files_to_add[file.exists(files_to_add)]
+system(glue("git add {paste(existing_files, collapse=' ')}"), intern = TRUE)
+
 
 # 🚀 Git 강제 Push (충돌 무시)
 system("git config user.name 'github-actions'")
 system("git config user.email 'actions@github.com'")
-system("git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png", intern = TRUE)
+system("git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png", intern = TRUE)
 commit_log <- system("git commit -m '자동 리포트 갱신' || echo 'No changes to commit'", intern = TRUE)
 
 if (!any(grepl("No changes to commit", commit_log))) {

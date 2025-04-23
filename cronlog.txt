@@ -111,3 +111,1075 @@ In system("git add index.html summary_7day_compare_table.png summary_rank_change
 fatal: not a git repository (or any parent up to mount point /)
 Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
 ℹ️ 변경사항 없음. Git push 생략됨.
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+fatal: pathspec 'order_by_round.png' did not match any files
+character(0)
+attr(,"status")
+[1] 128
+Warning message:
+In system("git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png",  :
+  running command 'git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png' had status 128
+ℹ️ 변경사항 없음. Git push 생략됨.
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+fatal: pathspec 'order_by_round.png' did not match any files
+character(0)
+attr(,"status")
+[1] 128
+Warning message:
+In system("git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png",  :
+  running command 'git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png' had status 128
+ℹ️ 변경사항 없음. Git push 생략됨.
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+fatal: pathspec 'order_by_round.png' did not match any files
+character(0)
+attr(,"status")
+[1] 128
+Warning message:
+In system("git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png",  :
+  running command 'git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png' had status 128
+ℹ️ 변경사항 없음. Git push 생략됨.
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+fatal: pathspec 'order_by_round.png' did not match any files
+character(0)
+attr(,"status")
+[1] 128
+Warning message:
+In system("git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png",  :
+  running command 'git add index.html summary_7day_compare_table.png summary_rank_change_top10_table.png rank_change_top10_trend.png order_by_round.png order_by_round_chart.png' had status 128
+ℹ️ 변경사항 없음. Git push 생략됨.
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+character(0)
+character(0)
+✅ 커밋 완료 → 강제 push 실행
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f get: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f store: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/Namsang-Kim/item-report-11610.git        
+To https://github.com/namsang-kim/item-report-11610.git
+   ec21ee1..6c4dcd0  main -> main
+✅ 강제 push 완료
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+character(0)
+character(0)
+✅ 커밋 완료 → 강제 push 실행
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f get: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f store: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/Namsang-Kim/item-report-11610.git        
+To https://github.com/namsang-kim/item-report-11610.git
+   6c4dcd0..196a3ff  main -> main
+✅ 강제 push 완료
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+character(0)
+character(0)
+✅ 커밋 완료 → 강제 push 실행
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f get: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f store: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/Namsang-Kim/item-report-11610.git        
+To https://github.com/namsang-kim/item-report-11610.git
+   196a3ff..0c2ad16  main -> main
+✅ 강제 push 완료
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+character(0)
+character(0)
+✅ 커밋 완료 → 강제 push 실행
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f get: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f store: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/Namsang-Kim/item-report-11610.git        
+To https://github.com/namsang-kim/item-report-11610.git
+   0c2ad16..48c8946  main -> main
+✅ 강제 push 완료
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+character(0)
+character(0)
+✅ 커밋 완료 → 강제 push 실행
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f get: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f store: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/Namsang-Kim/item-report-11610.git        
+To https://github.com/namsang-kim/item-report-11610.git
+   48c8946..34862e7  main -> main
+✅ 강제 push 완료
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Warning message:
+package ‘bit’ was built under R version 4.0.5 
+Attaching package bit64
+package:bit64 (c) 2011-2017 Jens Oehlschlaegel
+creators: integer64 runif64 seq :
+coercion: as.integer64 as.vector as.logical as.integer as.double as.character as.bitstring
+logical operator: ! & | xor != == < <= >= >
+arithmetic operator: + - * / %/% %% ^
+math: sign abs sqrt log log2 log10
+math: floor ceiling trunc round
+querying: is.integer64 is.vector [is.atomic} [length] format print str
+values: is.na is.nan is.finite is.infinite
+aggregation: any all min max range sum prod
+cumulation: diff cummin cummax cumsum cumprod
+access: length<- [ [<- [[ [[<-
+combine: c rep cbind rbind as.data.frame
+WARNING don't use as subscripts
+WARNING semantics differ from integer
+for more help type ?bit64
+
+Attaching package: ‘bit64’
+
+The following objects are masked from ‘package:base’:
+
+    :, %in%, colSums, is.double, match, order, rank, rowSums
+
+Warning message:
+package ‘bit64’ was built under R version 4.0.5 
+Warning message:
+package ‘DBI’ was built under R version 4.0.5 
+Warning message:
+package ‘RMySQL’ was built under R version 4.0.5 
+Warning message:
+package ‘ggplot2’ was built under R version 4.0.5 
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:bit’:
+
+    symdiff
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.0.5 
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning message:
+package ‘lubridate’ was built under R version 4.0.5 
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:bit’:
+
+    setattr
+
+Warning message:
+package ‘data.table’ was built under R version 4.0.5 
+Warning message:
+package ‘tidyr’ was built under R version 4.0.5 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+Warning message:
+package ‘glue’ was built under R version 4.0.5 
+null device 
+          1 
+character(0)
+character(0)
+✅ 커밋 완료 → 강제 push 실행
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f get: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+f() { /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node /tmp/vscode-remote-containers-f5a4082d-3e44-42b9-aabc-66fb21a7fcde.js git-credential-helper $*; }; f store: 1: /root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node: Permission denied
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/Namsang-Kim/item-report-11610.git        
+To https://github.com/namsang-kim/item-report-11610.git
+ + 199837e...7b693cb main -> main (forced update)
+✅ 강제 push 완료
